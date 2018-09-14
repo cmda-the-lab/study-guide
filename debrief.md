@@ -1,4 +1,4 @@
-# Study Guide
+# Study Guide 2.0
 
 ## MVP (what it must be)
 
