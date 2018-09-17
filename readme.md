@@ -11,6 +11,8 @@ find info on courses and programmes).
 
 For more info on the initial idea, see [debrief.md][debrief].
 
+To see how we worked, peruse [worklog.md][worklog].
+
 ## Team
 
 *   Roey Tsemah ([**@pitzzz**][pitzzz], teacher)
@@ -72,3 +74,5 @@ that’s not feasible.
 [gh]: https://github.com/cmda-the-lab
 
 [debrief]: debrief.md
+
+[worklog]: worklog.md
