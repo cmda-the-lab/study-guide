@@ -9,6 +9,8 @@ This iteration, the first of The Lab, is focussed on building an interactive
 and better study guide (the static, out-of-date but official way to store and
 find info on courses and programmes).
 
+For more info on the initial idea, see [debrief.md][debrief].
+
 ## Team
 
 *   Roey Tsemah ([**@pitzzz**][pitzzz], teacher)
@@ -68,3 +70,5 @@ that’s not feasible.
 [wooorm]: https://github.com/wooorm
 
 [gh]: https://github.com/cmda-the-lab
+
+[debrief]: debrief.md
