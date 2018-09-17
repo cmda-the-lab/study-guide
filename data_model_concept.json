@@ -33,7 +33,7 @@
     "coördinator": "Titus Wormer",
     "studiemateriaal": "Blogs, artikelen, presentaties, videos, en tutorials, verstrekt in de les of via GitHub en Slack.​​",
     "leerdoelen": ["-Je kunt een JavaScript framework doorgronden en inzetten.", "-Je kunt een interactieve applicatie bedenken en maken op basis van bestaande code.- Je kunt omgaan met technische documentatie en technische hulpbronnen op internet.​​"],
-    "competenties": "[ADD THESE LATER]"
+    "competenties": "[ADD THESE LATER]",
     "relatie met andere studieonderdelen":"Frontend Applications staat in het verlengde van Internetstandaarden, Inleiding Programmeren, Blok Web, en Blok Tech, en bereidt voor op Functional Programming en Frontend Data.​",
     "leerlijn": "​​ Je kunt een onderbouwde interactieve applicatie bedenken en uitwerken op basis van bestaande code.​​​"
 }
