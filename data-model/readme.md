@@ -13,6 +13,15 @@ Additionally, the following structures are limited:
 *   People — for now, people are one big list, the model does not deal with people starting or ending work, or people working at multiple faculties
 *   Years — for now, competencies and courses exist, but they do not exist or change across years.
     New or changed ones get new identifiers
+*   Languages — Maybe there’s a default language in a program
+*   Objectives aren’t structured, maybe that’s fine, maybe not
+*   Quarter and semester could be reflected from the start and end dates, maybe something else is needed though
+
+Some more values need to be modelled:
+
+*   [ ] `course.assessments` and `course.assessmentsSummary`
+*   [ ] `course.materials` and `course.materialsSummary`
+*   [ ] some form of prereqs and future courses, to relate to other courses in the program
 
 The other directories contain a potential API structure, and examples of data as could be exposed from said API, implementing the typescript definitions.
 
@@ -220,6 +229,102 @@ For example, an indicator could look like:
 }
 ```
 
+### Course
+
+A course is the main source of information.
+The atoms in the university.
+
+```typescript
+export interface Course {
+  id: string
+  name: I18NLiteral[]
+  description: I18NRoot[]
+  year: string
+  credits: number
+  start: string
+  end: string
+  languages: string[]
+  coordinators: Person[]
+  coordinatorsSummary?: I18NRoot[]
+  teachers: Person[]
+  teachersSummary?: I18NRoot[]
+  competencies: Competency[]
+  competenciesSummary?: I18NRoot[]
+  objectivesSummary: I18NRoot[]
+  program?: Program
+  faculty?: Faculty
+}
+```
+
+The `id` field is a unique identifier to distinguish one course from another across a program.
+This value is the same as the AUAS “Studiegidsnummer”, ASCII-lowercased.
+
+The `name` field is a list of [I18NLiteral][]s.
+
+The `description` field is a list of [I18NRoot][]s.
+
+The `year` field is a school year identifier, in the form of `xxxy-xxxz`, where `z` is `y` incremented by one, and the X-es could be any year.  For example `2018-2019`.
+
+The `credits` field is the number of points a students receives on completion of this course.
+These are ECTS (European Credit Transfer and Accumulation System) as used in the Netherlands
+(a year of studying is worth 60 points).
+At CMDA, a course is typically 3 credits, whereas a project is 5.
+
+The `languages` field is a list of BCP-47 tags, as relaxed as possible, defining the natural languages the course is given in.
+Fluency in all languages in `languages` is required to attempt this course.
+If a course was given in one or another language, it should be two courses instead.
+
+The `start` and `end` fields are dates, as in `YYYY-MM-DD`, as in, a valid date string as defined by the HTML specification, and represent the date a course starts, and ends.
+These values could reflect the quarter and semester a course is given in.
+Potentially, coordinators don’t know these dates at the time of filling out information.
+If a course is given to multiple groups starting in the same week, it’s said to be one course,
+and the start date of the first group and the end date of the last group should be used.
+If a course has start dates in multiple weeks, it is said to be different courses.
+
+The `teachers` field contains a list of [Person][]s, teaching the course.
+
+A `teachersSummary` field is an optional description of the people teaching the course, and is represented as [I18NRoot][]s.
+
+The `coordinators` field contains a list of [Person][]s, coordinating the course.
+
+A `coordinators` field is an optional description of the people coordinating the course, and is represented as [I18NRoot][]s.
+
+The `competencies` field contains a list of [Competencies][].
+
+A `competenciesSummary` field is an optional description of the competencies present in the course, and is represented as [I18NRoot][]s.
+
+An `objectivesSummary` field is an optional description of the objectives attained in the course, and is represented as [I18NRoot][]s.
+
+Conceptually, there could be a `program` field containing a [Program][] exposed as well.
+
+Conceptually, there could be a `faculty` field containing a [Faculty][] exposed as well.
+
+For example, an indicator could look like:
+
+```js
+{
+  "id": "4a",
+  "name": [
+    {"language": "nl", "value": "Een CMD’er is kritisch op het eigen werk met als doel dit te verbeteren en zoekt actief naar feedback."},
+    {"language": "en", "value": "A CMD’er is self-critical to be able to improve their work and actively look for feedback."}
+  ],
+  "description": [
+    {
+      "language": "nl",
+      "content": {
+        // ...
+      }
+    },
+    {
+      "language": "en",
+      "content": {
+        // ...
+      }
+    }
+  ]
+}
+```
+
 ## Abstract interfaces
 
 The following interfaces are used in concrete interfaces (those exposed through the API directly).
@@ -286,5 +391,5 @@ For example, a root could look like:
       }
     ]
   }]
-},
+}
 ```

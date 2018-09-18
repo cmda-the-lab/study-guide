@@ -73,14 +73,11 @@ export interface Course {
 
   // Date the course starts and ends, e.g., `2018-10-08` and `2018-10-19`,
   // Quarters and Semesters are calculated from this.
-  // TODO: Maybe this is not possible, as lecturers don’t know dates yet.
-  // TODO: How to deal with courses that are given twice a year? Duplicate them?
   start: string
   end: string
 
   // Languages the course is given in. BCP-47 tags.
-  // TODO: Is there a default per program?
-  language: string[]
+  languages: string[]
 
   // List of methods, e.g., `lecture`, `lab`. Could be a list of Method interfaces.
   methods: string[]
@@ -94,25 +91,15 @@ export interface Course {
   teachers: Person[]
   teachersSummary?: I18NRoot[]
 
-  // List of learning objectives.  Free form to be filled out be coordinator.
-  // TODO: can we structure the objectives more?
-  objectivesSummary?: I18NRoot[]
-
   // List of competencies.  Choice from program mix.
   competencies: Competency[]
   competenciesSummary?: I18NRoot[]
   
-  // To do:
-  // - add materials
-  // - add assessments
-  // - add extra notes / remarks
-  // - Add automated relation to other courses, based on them requiring this or
-  // suggesting this, or the other way around?
+  // List of translated learning objectives, probably lists.
+  // Free form to be filled out be coordinator.
+  objectivesSummary?: I18NRoot[]
 
-  // Faculty and program should be calculated from the id.
-  programId: string
   program?: Program
-  facultyId: string
   faculty?: Faculty
 }
 
