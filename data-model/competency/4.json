@@ -1,0 +1,21 @@
+{
+  "id": "4",
+  "name": [
+    {"language": "nl", "value": "Evalueren"},
+    {"language": "en", "value": "Evaluation"}
+  ],
+  "description": [
+    {
+      "language": "nl",
+      "content": {
+        // ...
+      }
+    },
+    {
+      "language": "en",
+      "content": {
+        // ...
+      }
+    }
+  ]
+}

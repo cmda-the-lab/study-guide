@@ -1,0 +1,21 @@
+{
+  "id": "4a",
+  "name": [
+    {"language": "nl", "value": "Een CMD’er is kritisch op het eigen werk met als doel dit te verbeteren en zoekt actief naar feedback."},
+    {"language": "en", "value": "A CMD’er is self-critical to be able to improve their work and actively look for feedback."}
+  ],
+  "description": [
+    {
+      "language": "nl",
+      "content": {
+        // ...
+      }
+    },
+    {
+      "language": "en",
+      "content": {
+        // ...
+      }
+    }
+  ]
+}

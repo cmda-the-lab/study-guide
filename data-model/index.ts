@@ -11,10 +11,10 @@ export as namespace StudyGuide
 export interface Faculty {
   // E.G., `fdmci` and `Digitale Media en Creatieve Industrie`.
   id: string
-  name: string
+  name: I18NLiteral
 
-  // List of applicable programs.
-  programs: Program[]
+  // Applicable programs.
+  programs?: Program[]
 }
 
 // A complete program.
@@ -24,17 +24,32 @@ export interface Program {
   // And a human-readable name of the course, e.g., `Communication and Multimedia Design (bachelor, voltijd)`.
   // Potentially, we could have a name, type (bachelor, master), and fulltime (true, false).
   id: string
-  name: string
+  name: I18NLiteral
 
-  // List of applicable courses.
-  courses: Course[]
+  // Applicable courses and competencies.
+  courses?: Course[]
+  competencies?: Competencies[]
 
-  // List of competencies.
-  competencies: Competencies[]
-
-  // Faculty should be calculated from the id.
-  facultyId: string
+  // Faculty the program is part of.
   faculty?: Faculty
+}
+
+export interface Competency {
+  id: string
+  name: I18NLiteral[]
+  description: I18NRoot[]
+
+  indicators?: Indicator[]
+  program?: Program
+}
+
+export interface Indicator {
+  id: string
+  name: I18NLiteral[]
+  description: I18NRoot[]
+
+  competency?: Competency
+  program?: Program
 }
 
 // An atom in a university module.
@@ -46,7 +61,7 @@ export interface Course {
   name: string
 
   // A field describing the course. Should be one paragraph, per language.
-  description: Field[]
+  description: I18NRoot[]
 
   // The (school) year of the course, e.g., `2018-2019`.
   year: string
@@ -58,31 +73,34 @@ export interface Course {
 
   // Date the course starts and ends, e.g., `2018-10-08` and `2018-10-19`,
   // Quarters and Semesters are calculated from this.
+  // TODO: Maybe this is not possible, as lecturers don’t know dates yet.
+  // TODO: How to deal with courses that are given twice a year? Duplicate them?
   start: string
   end: string
 
   // Languages the course is given in. BCP-47 tags.
+  // TODO: Is there a default per program?
   language: string[]
 
   // List of methods, e.g., `lecture`, `lab`. Could be a list of Method interfaces.
   methods: string[]
-  methodSummary?: Field[]
+  methodSummary?: I18NRoot[]
 
   // List of people.
   coordinators: Person[]
-  coordinatorsSummary?: Field[]
+  coordinatorsSummary?: I18NRoot[]
 
   // List of people.
   teachers: Person[]
-  teachersSummary?: Field[]
+  teachersSummary?: I18NRoot[]
 
   // List of learning objectives.  Free form to be filled out be coordinator.
-  objectives: Objective[]
-  objectivesSummary?: Field[]
+  // TODO: can we structure the objectives more?
+  objectivesSummary?: I18NRoot[]
 
   // List of competencies.  Choice from program mix.
   competencies: Competency[]
-  competenciesSummary?: Field[]
+  competenciesSummary?: I18NRoot[]
   
   // To do:
   // - add materials
@@ -93,33 +111,34 @@ export interface Course {
 
   // Faculty and program should be calculated from the id.
   programId: string
-  program?: string
+  program?: Program
   facultyId: string
-  faculty?: string
+  faculty?: Faculty
 }
 
 export interface Person {
   id: string
 
-  // Name of a person, e.g., `Titus Wormer` or `Titus E.C. Wormer`
+  // Name of a person, e.g., `Titus Wormer`.
   name: string
 
   // The work email of the person.
   email: string
 }
 
-export interface Field {
+export interface I18NLiteral {
   // The language of a field, in BCP-47 format.
   language: string
 
-  // The content of a field, <https://github.com/syntax-tree/hast> format.
-  content: HastNode
+  // The content of a field
+  value: string
 }
 
-// To do
-export interface Objective {
-}
+export interface I18NRoot {
+  // The language of a field, in BCP-47 format.
+  language: string
 
-// To do
-export interface Competency {
+  // The content of a field, must be any node acceptable in a `<body>` element,
+  // See <https://github.com/syntax-tree/hast>.
+  content: HASTNode[]
 }
