@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "study-guide",
+  "version": "0.0.0",
+  "description": "Study Guide",
+  "scripts": {
+    "format": "remark . -qfo",
+    "test": "npm run format"
+  },
+  "repository": "cmda-the-lab/study-guide",
+  "bugs": "https://github.com/cmda-the-lab/study-guide/issues",
+  "keywords": [],
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "remark-cli": "^5.0.0",
+    "remark-preset-wooorm": "^4.0.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm",
+      ["lint-maximum-line-length", false]
+    ]
+  }
+}

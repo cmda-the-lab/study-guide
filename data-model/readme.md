@@ -6,23 +6,23 @@ This folder contains all the info on the conceptual data model of the Study Guid
 
 Note that this model intentionally does not deal with:
 
-*   Universities — for now, there’s just AUAS / HVA
+-   Universities — for now, there’s just AUAS / HVA
 
 Additionally, the following structures are limited:
 
-*   People — for now, people are one big list, the model does not deal with people starting or ending work, or people working at multiple faculties
-*   Programs — Could be modelled further, e.g., <https://studiegids.hva.nl/studiegids?edu=cmd-vt&acy=2018-2019>
-*   Years — for now, competencies and courses exist, but they do not exist or change across years.
+-   People — for now, people are one big list, the model does not deal with people starting or ending work, or people working at multiple faculties
+-   Programs — Could be modelled further, e.g., <https://studiegids.hva.nl/studiegids?edu=cmd-vt&acy=2018-2019>
+-   Years — for now, competencies and courses exist, but they do not exist or change across years.
     New or changed ones get new identifiers
-*   Languages — Maybe there’s a default language in a program
-*   Objectives aren’t structured, maybe that’s fine, maybe not
-*   Quarter and semester could be reflected from the start and end dates, maybe something else is needed though
+-   Languages — Maybe there’s a default language in a program
+-   Objectives aren’t structured, maybe that’s fine, maybe not
+-   Quarter and semester could be reflected from the start and end dates, maybe something else is needed though
 
 Some more values need to be modelled:
 
-*   [ ] `course.assessments` and `course.assessmentsSummary`
-*   [ ] `course.materials` and `course.materialsSummary`
-*   [ ] some form of prereqs and future courses, to relate to other courses in the program
+-   [ ] `course.assessments` and `course.assessmentsSummary`
+-   [ ] `course.materials` and `course.materialsSummary`
+-   [ ] some form of prereqs and future courses, to relate to other courses in the program
 
 The other directories contain a potential API structure, and examples of data as could be exposed from said API, implementing the typescript definitions.
 
