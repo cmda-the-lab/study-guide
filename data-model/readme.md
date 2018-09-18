@@ -311,29 +311,92 @@ Conceptually, there could be a `program` field containing a [Program][] exposed 
 
 Conceptually, there could be a `faculty` field containing a [Faculty][] exposed as well.
 
-For example, an indicator could look like:
+For example, a course could look like:
 
 ```js
 {
-  "id": "4a",
+  "id": "3000frap18",
   "name": [
-    {"language": "nl", "value": "Een CMD’er is kritisch op het eigen werk met als doel dit te verbeteren en zoekt actief naar feedback."},
-    {"language": "en", "value": "A CMD’er is self-critical to be able to improve their work and actively look for feedback."}
+    {"language": "nl", "Frontend Applicaties"},
+    {"language": "en", "Frontend Applications"}
   ],
-  "description": [
-    {
-      "language": "nl",
-      "content": {
-        // ...
-      }
-    },
-    {
-      "language": "en",
-      "content": {
-        // ...
-      }
-    }
-  ]
+  "description": [{
+    "language": "nl",
+    "content": [{
+      "type": "element",
+      "tagName": "p",
+      "properties": {},
+      "children": [
+        {
+          "type": "text",
+          "value": "🏕 In Frontend Applications ("
+        },
+        {
+          "type": "element",
+          "tagName": "strong",
+          "properties": {},
+          "children": [{"type": "text", "value": "fa"}]
+        },
+        {
+          "type": "text",
+          "value": ") kijken we naar wat er nodig is om een frontend app te ontwikkelen. We combineren HTML en CSS kennis uit Frontend 1, JavaScript uit Frontend 2, en Node uit Backend. We ontdekken de tools die frontend designers in het werkveld gebruiken. Itereren, debuggen, en refactoren komen langs. Én we ontdekken frameworks."
+        }
+      ]
+    }]
+  }],
+  "year": "2018-2019",
+  "credits": 3,
+  "start": "2018-10-08",
+  "end": "2018-10-19",
+  "languages": ["nl"],
+  "coordinators": [{"id": "wormt", "name": "Titus Wormer", "email": "t.e.wormer@hva.nl"}],
+  "teachers": [
+    {"id": "wormt", "name": "Titus Wormer", "email": "t.e.wormer@hva.nl"},
+    {"id": "aarnl", "name": "Laurens Aarnoudse", "email": "l.n.aarnoudse@hva.nl"}
+  ],
+  "competencies": [
+    // This one actually wasn’t filled out properly.
+  ],
+  "competenciesSummary": [
+    // This one actually wasn’t filled out properly.
+  ],
+  "objectivesSummary": [{
+    "language": "nl",
+    "content": [{
+      "type": "element",
+      "tagName": "ul",
+      "properties": {},
+      "children": [
+        {
+          "type": "element",
+          "tagName": "li",
+          "properties": {},
+          "children": [{
+            "type": "text",
+            "value": "Je kunt een JavaScript framework doorgronden en inzetten."
+          }]
+        },
+        {
+          "type": "element",
+          "tagName": "li",
+          "properties": {},
+          "children": [{
+            "type": "text",
+            "value": "Je kunt een interactieve applicatie bedenken en maken op basis van bestaande code."
+          }]
+        },
+        {
+          "type": "element",
+          "tagName": "li",
+          "properties": {},
+          "children": [{
+            "type": "text",
+            "value": "Je kunt omgaan met technische documentatie en technische hulpbronnen op internet."
+          }]
+        }
+      ]
+    }]
+  }]
 }
 ```
 
