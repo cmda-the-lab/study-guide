@@ -15,19 +15,19 @@ To see how we worked, peruse [worklog.md][worklog].
 
 ## Team
 
--   Roey Tsemah ([**@pitzzz**][pitzzz], teacher)
--   Laurens Aarnoudse ([**@Razpudding**][razpudding], teacher)
--   Titus Wormer ([**@wooorm**][wooorm], teacher)
--   Florence Hoogveld (student)
+*   Roey Tsemah ([**@pitzzz**][pitzzz], teacher)
+*   Laurens Aarnoudse ([**@Razpudding**][razpudding], teacher)
+*   Titus Wormer ([**@wooorm**][wooorm], teacher)
+*   Florence Hoogveld (student)
 
 ## Communication
 
 We use:
 
--   [GitHub][gh] — for files, documentation, and planning
--   Slack — for private and irrelevant communication※
--   Drive — for private files and easy collaboration※
--   Status Hero — team status reports
+*   [GitHub][gh] — for files, documentation, and planning
+*   Slack — for private and irrelevant communication※
+*   Drive — for private files and easy collaboration※
+*   Status Hero — team status reports
 
 > ※ ask any team member for an invite
 
