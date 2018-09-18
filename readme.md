@@ -63,6 +63,25 @@ that’s not feasible.
 
 > ※ Florence will finish her graduation thesis till ± February 1.
 
+## Roadmap
+
+| Week | Tech       | Visual |
+| ---- | ---------- | ------ |
+| 38   | Data model |        |
+| 39   | API        |        |
+| 40   | Scraper    |        |
+| 41   | Scraper    |        |
+| 42   | Dashboard  |        |
+| 43   | Dashboard  |        |
+| 44   | Teachers   |        |
+| 45   | Teachers   |        |
+| 46   | Teachers   |        |
+| 47   | Teachers   |        |
+| 48   | Students   |        |
+| 49   | Students   |        |
+| 50   | Students   |        |
+| 51   | Students   |        |
+
 [cmda]: https://github.com/cmda
 
 [pitzzz]: https://github.com/pitzzz
