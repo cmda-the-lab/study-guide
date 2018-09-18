@@ -22,6 +22,7 @@ Some more values need to be modelled:
 
 *   [ ] `course.assessments` and `course.assessmentsSummary`
 *   [ ] `course.materials` and `course.materialsSummary`
+*   [ ] `course.methods` and `course.methodsSummary`
 *   [ ] some form of prereqs and future courses, to relate to other courses in the program
 
 The other directories contain a potential API structure, and examples of data as could be exposed from said API, implementing the typescript definitions.
