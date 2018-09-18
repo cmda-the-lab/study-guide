@@ -11,6 +11,7 @@ Note that this model intentionally does not deal with:
 Additionally, the following structures are limited:
 
 *   People — for now, people are one big list, the model does not deal with people starting or ending work, or people working at multiple faculties
+*   Programs — Could be modelled further, e.g., <https://studiegids.hva.nl/studiegids?edu=cmd-vt&acy=2018-2019>
 *   Years — for now, competencies and courses exist, but they do not exist or change across years.
     New or changed ones get new identifiers
 *   Languages — Maybe there’s a default language in a program
