@@ -18,7 +18,7 @@ To see how we worked, peruse [worklog.md][worklog].
 *   Roey Tsemah ([**@pitzzz**][pitzzz], teacher)
 *   Laurens Aarnoudse ([**@Razpudding**][razpudding], teacher)
 *   Titus Wormer ([**@wooorm**][wooorm], teacher)
-*   Florence Hoogveld (student)
+*   Florence Hoogveld ([**@FlorenceHoogveld**][florencehoogveld], student)
 
 ## Communication
 
@@ -83,6 +83,8 @@ that’s not feasible.
 | 51   | Students   |        |
 
 [cmda]: https://github.com/cmda
+
+[florencehoogveld]: https://github.com/florencehoogveld
 
 [pitzzz]: https://github.com/pitzzz
 
