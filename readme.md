@@ -1,11 +1,11 @@
-# Iteration 1 - Study Guide
+# Cycle 1 - Study Guide
 
-This repo holds documentation for the first iteration of The Lab, an accelerator
+This repo holds documentation for the first cycle of The Lab, an accelerator
 where students work as juniors and teachers hone their skills at [**@cmda**][cmda].
 
 ## Synopsis
 
-This iteration, the first of The Lab, is focussed on building an interactive
+This cycle, the first of The Lab, is focussed on building an interactive
 and better study guide (the static, out-of-date but official way to store and
 find info on courses and programmes).
 
@@ -33,7 +33,7 @@ We use:
 
 ## Calendar
 
-This iteration runs throughout Quarter 1 (fall) of the school year 2018-2019,
+This cycle runs throughout Quarter 1 (fall) of the school year 2018-2019,
 as in, September 3 through December 20.
 
 We meet in person every Tuesday morning.
