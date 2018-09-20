@@ -21,7 +21,7 @@ To see how we worked, peruse [worklog.md][worklog].
 *   Florence Hoogveld ([**@FlorenceHoogveld**][florencehoogveld], student)
 
 New here?
-See [onboarding.md][onboarding]
+See [onboarding.md][onboarding] and [how-we-work.md][how-we-work]
 
 ## Calendar
 
@@ -89,3 +89,5 @@ that’s not feasible.
 [worklog]: worklog.md
 
 [onboarding]: https://github.com/cmda-the-lab/meta/blob/master/onboarding.md
+
+[how-we-work]: https://github.com/cmda-the-lab/meta/blob/master/how-we-work.md
