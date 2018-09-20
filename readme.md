@@ -20,16 +20,8 @@ To see how we worked, peruse [worklog.md][worklog].
 *   Titus Wormer ([**@wooorm**][wooorm], teacher)
 *   Florence Hoogveld ([**@FlorenceHoogveld**][florencehoogveld], student)
 
-## Communication
-
-We use:
-
-*   [GitHub][gh] — for files, documentation, and planning
-*   Slack — for private and irrelevant communication※
-*   Drive — for private files and easy collaboration※
-*   Status Hero — team status reports
-
-> ※ ask any team member for an invite
+New here?
+See [onboarding.md][onboarding]
 
 ## Calendar
 
@@ -92,8 +84,8 @@ that’s not feasible.
 
 [wooorm]: https://github.com/wooorm
 
-[gh]: https://github.com/cmda-the-lab
-
 [debrief]: debrief.md
 
 [worklog]: worklog.md
+
+[onboarding]: https://github.com/cmda-the-lab/meta/blob/master/onboarding.md
