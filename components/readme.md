@@ -18,15 +18,20 @@ The following ASCII-art diagram shows the different technical components.
   |            TEACHERS APP            +----+          |
   | place where humans fill in courses |    |          |
   +------------------------------------+    |          |
-                                            |          |    +----------+
-  +------------------------------------+    |          |    |          |
-  |            STUDENTS APP            +----+          +----+ database |
-  |   place where humans view courses  |    |   API    |    |          |
-  +------------------------------------+    |          |    +----------+
                                             |          |
   +------------------------------------+    |          |
-  |            CUR. COM. APP           +----+          |
+  |            STUDENTS APP            +----+          |
+  |   place where humans view courses  |    |          |    +----------+
+  +------------------------------------+    |          |    |          |
+                                            |   API    +----+ database |
+  +------------------------------------+    |          |    |          |
+  |            CUR. COM. APP           +----+          |    +----------+
   | place where humans review courses  |    |          |
+  +------------------------------------+    |          |
+                                            |          |
+  +------------------------------------+    |          |
+  |               Scraper              +----+          |
+  |        tool to inject data         |    |          |
   +------------------------------------+    |          |
                                             +----------+
 ```
