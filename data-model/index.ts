@@ -92,6 +92,7 @@ export interface Course {
   teachersSummary?: I18NRoot[]
 
   // List of competencies.  Choice from program mix.
+  // Maybe these are indicators instead?
   competencies: Competency[]
   competenciesSummary?: I18NRoot[]
   
