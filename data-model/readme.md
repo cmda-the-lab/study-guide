@@ -17,6 +17,7 @@ Additionally, the following structures are limited:
 *   Languages — Maybe there’s a default language in a program
 *   Objectives aren’t structured, maybe that’s fine, maybe not
 *   Quarter and semester could be reflected from the start and end dates, maybe something else is needed though
+*   Indicators — Probably needs a `level`
 
 Some more values need to be modelled:
 
