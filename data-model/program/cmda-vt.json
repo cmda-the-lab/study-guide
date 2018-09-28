@@ -1,7 +1,7 @@
 {
   "id": "cmd-vt",
   "name": [
-    {"lang": "nl", "Communicatie en Multimedia Design"},
-    {"lang": "en", "Communcation and Multimedia Design"}
+    {"lang": "nl", "value": "Communicatie en Multimedia Design"},
+    {"lang": "en", "value": "Communcation and Multimedia Design"}
   ]
 }
