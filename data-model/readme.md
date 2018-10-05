@@ -202,7 +202,7 @@ export interface Indicator {
   name: I18NLiteral[]
   description: I18NRoot[]
 
-  indicators?: Indicator[]
+  competency?: Competency
   program?: Program
 }
 ```
