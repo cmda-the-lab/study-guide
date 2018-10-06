@@ -105,8 +105,8 @@ For example, a program could look like:
 {
   "id": "cmd-vt",
   "name": [
-    {"language": "nl", "Communicatie en Multimedia Design"},
-    {"language": "en", "Communcation and Multimedia Design"}
+    {"language": "nl", "value": "Communicatie en Multimedia Design"},
+    {"language": "en", "value": "Communcation and Multimedia Design"}
   ]
 }
 ```
