@@ -82,7 +82,7 @@ A program is a group of courses required and elective, resulting in some piece o
 ```typescript
 export interface Program {
   id: string
-  name: I18NLiteral
+  name: I18NLiteral[]
   courses?: Course[]
   competencies?: Competencies[]
   faculty?: Faculty
