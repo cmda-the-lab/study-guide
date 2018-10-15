@@ -26,6 +26,14 @@ export interface Program {
   id: string
   name: I18NLiteral
 
+  // CROHO Code:
+  // See <https://duo.nl/zakelijk/hoger-onderwijs/studentenadministratie/croho.jsp>
+  code: string
+  // Type of program (e.g., bachelor)
+  degree: string
+  // Total credits for program
+  credits: number
+
   // Applicable courses and competencies.
   courses?: Course[]
   competencies?: Competencies[]
