@@ -301,7 +301,7 @@ A `teachersSummary` field is an optional description of the people teaching the 
 
 The `coordinators` field contains a list of [Person][]s, coordinating the course.
 
-A `coordinators` field is an optional description of the people coordinating the course, and is represented as [I18NRoot][]s.
+A `coordinatorsSummary` field is an optional description of the people coordinating the course, and is represented as [I18NRoot][]s.
 
 The `competencies` field contains a list of [Competencies][].
 
